@@ -44,10 +44,25 @@ function showCollection(collection) {
 console.log(showCollection(myCollection));
 
 
-// TASK4:Use and test the showCollection function.
+// TASK4: Use and test the showCollection function.
 // showCollection(myCollection);
+// showCollection([]);
 
 
+// TASK5: Function
+
+function findByArtist(collection, artist) {
+  const matchAlbums = [];
+
+  for (const album of collection) {
+    if (album.artist === artist) {
+      matchAlbums.push(album);
+    }
+  }
+
+  return matchAlbums;
+
+}
 
 
 
